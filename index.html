@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test ChatGPT Access</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    button {
+      display: block;
+      width: 200px;
+      padding: 10px;
+      margin: 20px 0;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <button id="first-click">First click on me</button>
+  <button id="download-extension" onclick="alert('Download not implemented for test.')">Download the extension</button>
+
+  <script>
+    document.getElementById('first-click').addEventListener('click', function() {
+      this.textContent = 'Success';
+    });
+  </script>
+</body>
+</html>
